@@ -1,0 +1,8 @@
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<hr />
+{{sendData}}
+<app-child [PassTo]="sendData" (sendPar)="ReceiveChild($event)"></app-child>
+<button (click)="sendchild()">Send To Child</button>
